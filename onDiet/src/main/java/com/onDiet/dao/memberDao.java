@@ -14,6 +14,7 @@ public class memberDao implements memberService{
 	@Override
 	public Boolean isDoubleId(String id) {
 		Member m = mapper.findMemberById(id);
+		System.out.println(">> "+m.toString());
 		if(m!=null) return true;
 		return false;
 	}
@@ -22,7 +23,7 @@ public class memberDao implements memberService{
 	public String login(String id, String pass) {
 		Member m = mapper.findMemberById(id);
 		if(m!=null) {
-			if(m.getPass().equals(pass))return "sucess";
+			if(m.getPass().equals(pass))return "success";
 			else return "wrong password";
 		}
 		return "no user";

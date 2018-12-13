@@ -13,6 +13,11 @@ public class Member {
 	
 	public Member() {}
 	
+	public Member(String id, String pass) {
+		this.id = id;
+		this.pass = pass;
+	}
+
 	public Member(String id, String pass, String name, String age, String gender, String heigt, String weight,
 			String image, String train_yn) {
 		this.id = id;
@@ -78,6 +83,11 @@ public class Member {
 	}
 	public void setTrain_yn(String train_yn) {
 		this.train_yn = train_yn;
+	}
+
+	@Override
+	public String toString() {
+		return "Member [id=" + id + ", pass=" + pass + "]";
 	}
 	
 }

@@ -6,9 +6,10 @@
 </head>
 <body>
 <h1>
-	Hello world!  
+	Hello ${id} !  
 </h1>
-
 <P>  hi start page </P>
 </body>
+
+<br><br><a href ="/controller/logout"> logout </a>
 </html>

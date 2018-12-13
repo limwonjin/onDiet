@@ -1,5 +1,6 @@
 package com.onDiet.service;
 
+
 import com.onDiet.vo.Member;
 
 public interface memberService {
