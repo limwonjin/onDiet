@@ -6,7 +6,7 @@ public class Member {
 	private String name;
 	private String age;
 	private String gender;
-	private String heigt;
+	private String height;
 	private String weight;
 	private String image;
 	private String train_yn;
@@ -18,14 +18,14 @@ public class Member {
 		this.pass = pass;
 	}
 
-	public Member(String id, String pass, String name, String age, String gender, String heigt, String weight,
+	public Member(String id, String pass, String name, String age, String gender, String height, String weight,
 			String image, String train_yn) {
 		this.id = id;
 		this.pass = pass;
 		this.name = name;
 		this.age = age;
 		this.gender = gender;
-		this.heigt = heigt;
+		this.height = height;
 		this.weight = weight;
 		this.image = image;
 		this.train_yn = train_yn;
@@ -60,11 +60,11 @@ public class Member {
 	public void setGender(String gender) {
 		this.gender = gender;
 	}
-	public String getHeigt() {
-		return heigt;
+	public String getheight() {
+		return height;
 	}
-	public void setHeigt(String heigt) {
-		this.heigt = heigt;
+	public void setheight(String height) {
+		this.height = height;
 	}
 	public String getWeight() {
 		return weight;

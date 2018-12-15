@@ -3,8 +3,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
-<title>login</title>
+	<meta charset="EUC-KR">
+	<title>OnDiet</title>
 </head>
 <body>
 	<center>
@@ -16,7 +16,7 @@
 			&nbsp;Id<br>
 			<input type="text" name="id"> <br><br>
 			<br>&nbsp;Password<br>
-			<input type="text" name="pass"> <br>
+			<input type="password" name="pass"> <br>
 			<br><br>
 			<input type="submit" value="로그인">
 		</form>
