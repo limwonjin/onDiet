@@ -24,9 +24,9 @@ public class memberController {
 		if(id ==null) {
 			return "redirect:/login";
 		}
-		model.addAttribute("id", id);
+		model.addAttribute("id", id);  
 		return "home";
-	}
+	} 
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public String login() {	return "login";	}
 	
