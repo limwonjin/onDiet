@@ -32,6 +32,8 @@ public class memberController {
 	
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
 	public String loginProcess(Model model, HttpSession session, String id, String pass) {
+		
+		System.out.println("============id,pass"+id+pass);
 		String result  = service.login(id, pass);
 		if(result.equals("success")) {
 			session.setAttribute("id",id);

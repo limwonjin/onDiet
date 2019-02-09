@@ -16,6 +16,10 @@
   <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/bower_components/Ionicons/css/ionicons.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/dist/css/AdminLTE.min.css">
+  <!-- Material Design -->
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/dist/css/bootstrap-material-design.min.css">
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/dist/css/ripples.min.css">
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/dist/css/MaterialAdminLTE.min.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/dist/css/skins/_all-skins.min.css">
@@ -1243,6 +1247,12 @@
 </script>
 <!-- Bootstrap 3.3.7 -->
 <script src="<c:url value="/resources/bower_components/bootstrap/dist/js/bootstrap.min.js"/>"></script>
+<!-- Material Design -->
+<script src="<c:url value="/resources/dist/js/material.min.js"/>"></script>
+<script src="<c:url value="/resources/dist/js/ripples.min.js"/>"></script>
+<script>
+    $.material.init();
+</script>
 <!-- Morris.js charts -->
 <script src="<c:url value="/resources/bower_components/raphael/raphael.min.js"/>"></script>
 <script src="<c:url value="/resources/bower_components/morris.js/morris.min.js"/>"></script>

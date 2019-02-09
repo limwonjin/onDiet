@@ -16,8 +16,9 @@
   <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/bower_components/Ionicons/css/ionicons.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/dist/css/AdminLTE.min.css">
-  <!-- iCheck -->
-  <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/plugins/iCheck/square/blue.css">
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/dist/css/bootstrap-material-design.min.css">
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/dist/css/ripples.min.css">
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/dist/css/MaterialAdminLTE.min.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -84,8 +85,14 @@
 <script src="<c:url value="/resources/bower_components/jquery/dist/jquery.min.js" />"></script>
 <!-- Bootstrap 3.3.7 -->
 <script src="<c:url value="/resources/bower_components/bootstrap/dist/js/bootstrap.min.js"/>"></script>
+<!-- Material Design -->
+<script src="<c:url value="/resources/dist/js/material.min.js"/>"></script>
+<script src="<c:url value="/resources/dist/js/ripples.min.js"/>"></script>
+<script>
+    $.material.init();
+</script>
 <!-- iCheck -->
-<script src="<c:url value="/resources/plugins/iCheck/icheck.min.js"/>"></script>
+<!-- <script src="../../plugins/iCheck/icheck.min.js"></script> 
 <script>
   $(function () {
     $('input').iCheck({
@@ -93,7 +100,7 @@
       radioClass: 'iradio_square-blue',
       increaseArea: '20%' /* optional */
     });
-  });
+  });-->
 </script>
 </body>
 </html>

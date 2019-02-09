@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 2 | Mailbox</title>
+  <title>MaterialAdminLTE 2 | Mailbox</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -14,11 +14,16 @@
   <link rel="stylesheet" href="../../bower_components/Ionicons/css/ionicons.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="../../dist/css/AdminLTE.min.css">
+  <!-- Material Design -->
+  <link rel="stylesheet" href="../../dist/css/bootstrap-material-design.min.css">
+  <link rel="stylesheet" href="../../dist/css/ripples.min.css">
+  <link rel="stylesheet" href="../../dist/css/MaterialAdminLTE.min.css">
+  <style>.check-all{padding-left: 3px;} .btn-icon{ padding: 8px 12px;}</style>
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
+  <link rel="stylesheet" href="../../dist/css/skins/all-md-skins.min.css">
   <!-- iCheck -->
-  <link rel="stylesheet" href="../../plugins/iCheck/flat/blue.css">
+  <!-- <link rel="stylesheet" href="../../plugins/iCheck/flat/blue.css"> -->
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -36,9 +41,9 @@
     <!-- Logo -->
     <a href="../../index2.html" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>A</b>LT</span>
+      <span class="logo-mini">M<b>A</b>L</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Admin</b>LTE</span>
+      <span class="logo-lg">Material<b>Admin</b>LTE</span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
@@ -66,7 +71,7 @@
                   <li><!-- start message -->
                     <a href="#">
                       <div class="pull-left">
-                        <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                        <img src="../../dist/img/user-160x160.jpg" class="img-circle" alt="User Image">
                       </div>
                       <h4>
                         Support Team
@@ -137,16 +142,16 @@
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="../../dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-              <span class="hidden-xs">Alexander Pierce</span>
+              <img src="../../dist/img/user-160x160.jpg" class="user-image" alt="User Image">
+              <span class="hidden-xs">Thanh Nguyen</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                <img src="../../dist/img/user-160x160.jpg" class="img-circle" alt="User Image">
 
                 <p>
-                  Alexander Pierce - Web Developer
+                  Thanh Nguyen - Web Developer
                   <small>Member since Nov. 2012</small>
                 </p>
               </li>
@@ -191,10 +196,10 @@
       <!-- Sidebar user panel -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+          <img src="../../dist/img/user-160x160.jpg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>Alexander Pierce</p>
+          <p>Thanh Nguyen</p>
           <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
       </div>
@@ -412,7 +417,7 @@
     <section class="content">
       <div class="row">
         <div class="col-md-3">
-          <a href="compose.html" class="btn btn-primary btn-block margin-bottom">Compose</a>
+          <a href="compose.html" class="btn btn-primary btn-raised btn-block margin-bottom">Compose</a>
 
           <div class="box box-solid">
             <div class="box-header with-border">
@@ -465,7 +470,7 @@
 
               <div class="box-tools pull-right">
                 <div class="has-feedback">
-                  <input type="text" class="form-control input-sm" placeholder="Search Mail">
+                  <input type="text" class="form-control" placeholder="Search Mail">
                   <span class="glyphicon glyphicon-search form-control-feedback"></span>
                 </div>
               </div>
@@ -475,20 +480,19 @@
             <div class="box-body no-padding">
               <div class="mailbox-controls">
                 <!-- Check all button -->
-                <button type="button" class="btn btn-default btn-sm checkbox-toggle"><i class="fa fa-square-o"></i>
-                </button>
+                <div class="btn-group checkbox check-all"><label><input type="checkbox" class="checkbox-toggle"></label></div>
                 <div class="btn-group">
-                  <button type="button" class="btn btn-default btn-sm"><i class="fa fa-trash-o"></i></button>
-                  <button type="button" class="btn btn-default btn-sm"><i class="fa fa-reply"></i></button>
-                  <button type="button" class="btn btn-default btn-sm"><i class="fa fa-share"></i></button>
+                  <button type="button" class="btn btn-danger"><i class="fa fa-trash-o"></i></button>
+                  <button type="button" class="btn btn-default"><i class="fa fa-reply"></i></button>
+                  <button type="button" class="btn btn-default"><i class="fa fa-share"></i></button>
                 </div>
                 <!-- /.btn-group -->
-                <button type="button" class="btn btn-default btn-sm"><i class="fa fa-refresh"></i></button>
+                <button type="button" class="btn btn-success"><i class="fa fa-refresh"></i></button>
                 <div class="pull-right">
                   1-50/200
                   <div class="btn-group">
-                    <button type="button" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></button>
-                    <button type="button" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></button>
+                    <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i></button>
+                    <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i></button>
                   </div>
                   <!-- /.btn-group -->
                 </div>
@@ -498,136 +502,136 @@
                 <table class="table table-hover table-striped">
                   <tbody>
                   <tr>
-                    <td><input type="checkbox"></td>
+                    <td><div class="checkbox no-margin"><label><input type="checkbox"></label></div></td>
                     <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
-                    <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                    <td class="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
+                    <td class="mailbox-name"><a href="read-mail.html">Thanh Nguyen</a></td>
+                    <td class="mailbox-subject"><b>AdminLTE 2.4 Issue</b> - Trying to find a solution to this problem...
                     </td>
                     <td class="mailbox-attachment"></td>
                     <td class="mailbox-date">5 mins ago</td>
                   </tr>
                   <tr>
-                    <td><input type="checkbox"></td>
+                    <td><div class="checkbox no-margin"><label><input type="checkbox"></label></div></td>
                     <td class="mailbox-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
-                    <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                    <td class="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
+                    <td class="mailbox-name"><a href="read-mail.html">Thanh Nguyen</a></td>
+                    <td class="mailbox-subject"><b>AdminLTE 2.4 Issue</b> - Trying to find a solution to this problem...
                     </td>
                     <td class="mailbox-attachment"><i class="fa fa-paperclip"></i></td>
                     <td class="mailbox-date">28 mins ago</td>
                   </tr>
                   <tr>
-                    <td><input type="checkbox"></td>
+                    <td><div class="checkbox no-margin"><label><input type="checkbox"></label></div></td>
                     <td class="mailbox-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
-                    <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                    <td class="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
+                    <td class="mailbox-name"><a href="read-mail.html">Thanh Nguyen</a></td>
+                    <td class="mailbox-subject"><b>AdminLTE 2.4 Issue</b> - Trying to find a solution to this problem...
                     </td>
                     <td class="mailbox-attachment"><i class="fa fa-paperclip"></i></td>
                     <td class="mailbox-date">11 hours ago</td>
                   </tr>
                   <tr>
-                    <td><input type="checkbox"></td>
+                    <td><div class="checkbox no-margin"><label><input type="checkbox"></label></div></td>
                     <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
-                    <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                    <td class="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
+                    <td class="mailbox-name"><a href="read-mail.html">Thanh Nguyen</a></td>
+                    <td class="mailbox-subject"><b>AdminLTE 2.4 Issue</b> - Trying to find a solution to this problem...
                     </td>
                     <td class="mailbox-attachment"></td>
                     <td class="mailbox-date">15 hours ago</td>
                   </tr>
                   <tr>
-                    <td><input type="checkbox"></td>
+                    <td><div class="checkbox no-margin"><label><input type="checkbox"></label></div></td>
                     <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
-                    <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                    <td class="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
+                    <td class="mailbox-name"><a href="read-mail.html">Thanh Nguyen</a></td>
+                    <td class="mailbox-subject"><b>AdminLTE 2.4 Issue</b> - Trying to find a solution to this problem...
                     </td>
                     <td class="mailbox-attachment"><i class="fa fa-paperclip"></i></td>
                     <td class="mailbox-date">Yesterday</td>
                   </tr>
                   <tr>
-                    <td><input type="checkbox"></td>
+                    <td><div class="checkbox no-margin"><label><input type="checkbox"></label></div></td>
                     <td class="mailbox-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
-                    <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                    <td class="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
+                    <td class="mailbox-name"><a href="read-mail.html">Thanh Nguyen</a></td>
+                    <td class="mailbox-subject"><b>AdminLTE 2.4 Issue</b> - Trying to find a solution to this problem...
                     </td>
                     <td class="mailbox-attachment"><i class="fa fa-paperclip"></i></td>
                     <td class="mailbox-date">2 days ago</td>
                   </tr>
                   <tr>
-                    <td><input type="checkbox"></td>
+                    <td><div class="checkbox no-margin"><label><input type="checkbox"></label></div></td>
                     <td class="mailbox-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
-                    <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                    <td class="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
+                    <td class="mailbox-name"><a href="read-mail.html">Thanh Nguyen</a></td>
+                    <td class="mailbox-subject"><b>AdminLTE 2.4 Issue</b> - Trying to find a solution to this problem...
                     </td>
                     <td class="mailbox-attachment"><i class="fa fa-paperclip"></i></td>
                     <td class="mailbox-date">2 days ago</td>
                   </tr>
                   <tr>
-                    <td><input type="checkbox"></td>
+                    <td><div class="checkbox no-margin"><label><input type="checkbox"></label></div></td>
                     <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
-                    <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                    <td class="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
+                    <td class="mailbox-name"><a href="read-mail.html">Thanh Nguyen</a></td>
+                    <td class="mailbox-subject"><b>AdminLTE 2.4 Issue</b> - Trying to find a solution to this problem...
                     </td>
                     <td class="mailbox-attachment"></td>
                     <td class="mailbox-date">2 days ago</td>
                   </tr>
                   <tr>
-                    <td><input type="checkbox"></td>
+                    <td><div class="checkbox no-margin"><label><input type="checkbox"></label></div></td>
                     <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
-                    <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                    <td class="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
+                    <td class="mailbox-name"><a href="read-mail.html">Thanh Nguyen</a></td>
+                    <td class="mailbox-subject"><b>AdminLTE 2.4 Issue</b> - Trying to find a solution to this problem...
                     </td>
                     <td class="mailbox-attachment"></td>
                     <td class="mailbox-date">2 days ago</td>
                   </tr>
                   <tr>
-                    <td><input type="checkbox"></td>
+                    <td><div class="checkbox no-margin"><label><input type="checkbox"></label></div></td>
                     <td class="mailbox-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
-                    <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                    <td class="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
+                    <td class="mailbox-name"><a href="read-mail.html">Thanh Nguyen</a></td>
+                    <td class="mailbox-subject"><b>AdminLTE 2.4 Issue</b> - Trying to find a solution to this problem...
                     </td>
                     <td class="mailbox-attachment"></td>
                     <td class="mailbox-date">2 days ago</td>
                   </tr>
                   <tr>
-                    <td><input type="checkbox"></td>
+                    <td><div class="checkbox no-margin"><label><input type="checkbox"></label></div></td>
                     <td class="mailbox-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
-                    <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                    <td class="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
+                    <td class="mailbox-name"><a href="read-mail.html">Thanh Nguyen</a></td>
+                    <td class="mailbox-subject"><b>AdminLTE 2.4 Issue</b> - Trying to find a solution to this problem...
                     </td>
                     <td class="mailbox-attachment"><i class="fa fa-paperclip"></i></td>
                     <td class="mailbox-date">4 days ago</td>
                   </tr>
                   <tr>
-                    <td><input type="checkbox"></td>
+                    <td><div class="checkbox no-margin"><label><input type="checkbox"></label></div></td>
                     <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
-                    <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                    <td class="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
+                    <td class="mailbox-name"><a href="read-mail.html">Thanh Nguyen</a></td>
+                    <td class="mailbox-subject"><b>AdminLTE 2.4 Issue</b> - Trying to find a solution to this problem...
                     </td>
                     <td class="mailbox-attachment"></td>
                     <td class="mailbox-date">12 days ago</td>
                   </tr>
                   <tr>
-                    <td><input type="checkbox"></td>
+                    <td><div class="checkbox no-margin"><label><input type="checkbox"></label></div></td>
                     <td class="mailbox-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
-                    <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                    <td class="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
+                    <td class="mailbox-name"><a href="read-mail.html">Thanh Nguyen</a></td>
+                    <td class="mailbox-subject"><b>AdminLTE 2.4 Issue</b> - Trying to find a solution to this problem...
                     </td>
                     <td class="mailbox-attachment"><i class="fa fa-paperclip"></i></td>
                     <td class="mailbox-date">12 days ago</td>
                   </tr>
                   <tr>
-                    <td><input type="checkbox"></td>
+                    <td><div class="checkbox no-margin"><label><input type="checkbox"></label></div></td>
                     <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
-                    <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                    <td class="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
+                    <td class="mailbox-name"><a href="read-mail.html">Thanh Nguyen</a></td>
+                    <td class="mailbox-subject"><b>AdminLTE 2.4 Issue</b> - Trying to find a solution to this problem...
                     </td>
                     <td class="mailbox-attachment"><i class="fa fa-paperclip"></i></td>
                     <td class="mailbox-date">14 days ago</td>
                   </tr>
                   <tr>
-                    <td><input type="checkbox"></td>
+                    <td><div class="checkbox no-margin"><label><input type="checkbox"></label></div></td>
                     <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
-                    <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                    <td class="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a solution to this problem...
+                    <td class="mailbox-name"><a href="read-mail.html">Thanh Nguyen</a></td>
+                    <td class="mailbox-subject"><b>AdminLTE 2.4 Issue</b> - Trying to find a solution to this problem...
                     </td>
                     <td class="mailbox-attachment"><i class="fa fa-paperclip"></i></td>
                     <td class="mailbox-date">15 days ago</td>
@@ -642,20 +646,19 @@
             <div class="box-footer no-padding">
               <div class="mailbox-controls">
                 <!-- Check all button -->
-                <button type="button" class="btn btn-default btn-sm checkbox-toggle"><i class="fa fa-square-o"></i>
-                </button>
+                <div class="btn-group checkbox check-all"><label><input type="checkbox" class="checkbox-toggle"></label></div>
                 <div class="btn-group">
-                  <button type="button" class="btn btn-default btn-sm"><i class="fa fa-trash-o"></i></button>
-                  <button type="button" class="btn btn-default btn-sm"><i class="fa fa-reply"></i></button>
-                  <button type="button" class="btn btn-default btn-sm"><i class="fa fa-share"></i></button>
+                  <button type="button" class="btn btn-danger"><i class="fa fa-trash-o"></i></button>
+                  <button type="button" class="btn btn-default"><i class="fa fa-reply"></i></button>
+                  <button type="button" class="btn btn-default"><i class="fa fa-share"></i></button>
                 </div>
                 <!-- /.btn-group -->
-                <button type="button" class="btn btn-default btn-sm"><i class="fa fa-refresh"></i></button>
+                <button type="button" class="btn btn-success"><i class="fa fa-refresh"></i></button>
                 <div class="pull-right">
                   1-50/200
                   <div class="btn-group">
-                    <button type="button" class="btn btn-default btn-sm"><i class="fa fa-chevron-left"></i></button>
-                    <button type="button" class="btn btn-default btn-sm"><i class="fa fa-chevron-right"></i></button>
+                    <button type="button" class="btn btn-default"><i class="fa fa-chevron-left"></i></button>
+                    <button type="button" class="btn btn-default"><i class="fa fa-chevron-right"></i></button>
                   </div>
                   <!-- /.btn-group -->
                 </div>
@@ -676,7 +679,7 @@
     <div class="pull-right hidden-xs">
       <b>Version</b> 2.4.0
     </div>
-    <strong>Copyright &copy; 2014-2016 <a href="https://adminlte.io">Almsaeed Studio</a>.</strong> All rights
+    <strong>Copyright &copy; 2014-2018 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>, <a href="https://fezvrasta.github.io">Federico Zivolo</a> and <a href="https://ducthanhnguyen.github.io">Thanh Nguyen</a>.</strong> All rights
     reserved.
   </footer>
 
@@ -880,6 +883,12 @@
 <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
 <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- Material Design -->
+<script src="../../dist/js/material.min.js"></script>
+<script src="../../dist/js/ripples.min.js"></script>
+<script>
+    $.material.init();
+</script>
 <!-- Slimscroll -->
 <script src="../../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
 <!-- FastClick -->
@@ -887,13 +896,13 @@
 <!-- AdminLTE App -->
 <script src="../../dist/js/adminlte.min.js"></script>
 <!-- iCheck -->
-<script src="../../plugins/iCheck/icheck.min.js"></script>
+<!-- <script src="../../plugins/iCheck/icheck.min.js"></script> -->
 <!-- Page Script -->
 <script>
   $(function () {
     //Enable iCheck plugin for checkboxes
     //iCheck for checkbox and radio inputs
-    $('.mailbox-messages input[type="checkbox"]').iCheck({
+    /*$('.mailbox-messages input[type="checkbox"]').iCheck({
       checkboxClass: 'icheckbox_flat-blue',
       radioClass: 'iradio_flat-blue'
     });
@@ -911,8 +920,12 @@
         $(".fa", this).removeClass("fa-square-o").addClass('fa-check-square-o');
       }
       $(this).data("clicks", !clicks);
+    });*/
+	
+	$(".checkbox-toggle").click(function () {
+      $(".mailbox-messages input[type='checkbox'], .check-all input[type='checkbox']").prop('checked', $(this).is(':checked'));
     });
-
+	
     //Handle starring for glyphicon and font awesome
     $(".mailbox-star").click(function (e) {
       e.preventDefault();

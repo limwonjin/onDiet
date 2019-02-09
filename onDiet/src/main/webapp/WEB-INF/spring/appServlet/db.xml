@@ -14,10 +14,10 @@
 	</property>
 	
 	<property name="username">
-		<value>onhealth</value>
+		<value>ONHEALTH</value>
 	</property>
 	<property name="password">
-		<value>onhealth</value>
+		<value>ONHEALTH</value>
 	</property>
 	
 </bean>
